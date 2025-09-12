@@ -61,10 +61,5 @@
 			"OCA\\Libresign\\Vendor\\mikehaertl\\shellcommand\\": "lib/Vendor/php-shellcommand/src/",
 			"OCA\\Libresign\\Vendor\\mikehaertl\\tmp\\": "lib/Vendor/php-tmpfile/src/"
 		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"OCP\\": "vendor/nextcloud/ocp/OCP"
-		}
 	}
 }
