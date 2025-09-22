@@ -20,7 +20,7 @@
 					</td>
 					<td v-html="row.message" />
 					<td>{{ row.resource }}</td>
-					<td>{{ row.tip }}</td>
+					<td><span v-linkify="{ linkify: true, text: row.tip }" /></td>
 				</tr>
 			</tbody>
 		</table>
@@ -30,11 +30,15 @@
 import { translate as t } from '@nextcloud/l10n'
 
 import NcSettingsSection from '@nextcloud/vue/components/NcSettingsSection'
+import Linkify from '@nextcloud/vue/directives/Linkify'
 
 import { useConfigureCheckStore } from '../../store/configureCheck.js'
 
 export default {
 	name: 'ConfigureCheck',
+	directives: {
+		Linkify,
+	},
 	components: {
 		NcSettingsSection,
 	},
